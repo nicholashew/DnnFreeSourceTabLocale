@@ -2,8 +2,6 @@
 
 FreeSource_TabLocale module is a simple pages localization component module for **DNN 9** ([DotNetNuke](https://github.com/dnnsoftware)).
 
-This module created due to [Ealo Localization module](https://archive.codeplex.com/?p=ealo) that provides a basis for multilingual DotNetNuke based portals is no longer supported for DNN 9.
-
 This project built with [Christoc's DotNetNuke Module and Theme Development Template](https://github.com/ChrisHammond/DNNTemplates).
 
 ## Getting started
