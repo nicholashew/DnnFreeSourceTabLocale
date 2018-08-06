@@ -57,6 +57,7 @@ namespace FreeSource.Modules.TabLocale
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
+            btnClearCache.Click += btnClearCache_Click;
             ddlTabs.SelectedIndexChanged += ddlTabs_SelectedIndexChanged;
             ddlLocale.SelectedIndexChanged += ddlLocale_SelectedIndexChanged;
             ddlLocaleCompare.SelectedIndexChanged += ddlLocaleCompare_SelectedIndexChanged;
@@ -120,6 +121,10 @@ namespace FreeSource.Modules.TabLocale
                     }
                     break;
             }
+        }
+
+        protected void btnClearCache_Click(object sender, EventArgs e) {
+            new TabLocaleController().ClearCache();
         }
 
         protected void btnUpdateAll_Click(object sender, EventArgs e)
@@ -311,34 +316,6 @@ namespace FreeSource.Modules.TabLocale
                         var tabLocaleController = new TabLocaleController();
                         tabLocaleController.UpdateTabLocale(tabId, selectedLocale, txtTabName.Text, txtTabTitle.Text, txtTabDescription.Text, txtTabKeyWords.Text, txtTabPageHeadText.Text, UserId);          
                     }
-                }
-            }
-        }
-
-        protected void rptItemListOnItemDataBound(object sender, RepeaterItemEventArgs e)
-        {
-            if (e.Item.ItemType == ListItemType.AlternatingItem || e.Item.ItemType == ListItemType.Item)
-            {
-                var lnkEdit = e.Item.FindControl("lnkEdit") as HyperLink;
-                var lnkDelete = e.Item.FindControl("lnkDelete") as LinkButton;
-
-                var pnlAdminControls = e.Item.FindControl("pnlAdmin") as Panel;
-
-                var t = (Components.TabLocale)e.Item.DataItem;
-
-                if (IsEditable && lnkDelete != null && lnkEdit != null && pnlAdminControls != null)
-                {
-                    pnlAdminControls.Visible = true;
-                    lnkDelete.CommandArgument = t.ID.ToString();
-                    lnkDelete.Enabled = lnkDelete.Visible = lnkEdit.Enabled = lnkEdit.Visible = true;
-
-                    lnkEdit.NavigateUrl = EditUrl(string.Empty, string.Empty, "Edit", "tid=" + t.ID);
-
-                    ClientAPI.AddButtonConfirm(lnkDelete, Localization.GetString("ConfirmDelete", LocalResourceFile));
-                }
-                else
-                {
-                    pnlAdminControls.Visible = false;
                 }
             }
         }

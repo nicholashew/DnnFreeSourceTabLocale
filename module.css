@@ -1,9 +1,18 @@
+.et_header {
+    float: right;
+    margin-bottom: 15px;
+}
+
+    .et_header a {
+        margin-left: 12px;
+    }
+
 #etcont {
+    clear: both;
 }
 
 #et_help {
     font-size: 12px;
-    font-family: Arial, Sans-Serif;
     line-height: 1.5;
     padding: 10px;
     -moz-border-radius: 10px;
@@ -13,7 +22,6 @@
 
 .et_table {
     font-size: 12px;
-    font-family: Arial, Sans-Serif;
     margin: 20px 0 20px 0;
     -moz-border-radius: 10px;
     padding: 0 0 20px 0;
@@ -88,7 +96,7 @@
         border: 1px solid #1e88c3;
         outline: none
     }
-    
+
 .item_sep {
     background: #eee;
     height: 1px;
@@ -118,6 +126,7 @@
     cursor: pointer;
     font-family: inherit
 }
+
     .et_button:hover {
         color: #21a3da;
         border-color: #21a3da
@@ -130,7 +139,7 @@
     .et_button:active {
         color: #226f9b;
         border-color: #226f9b
-    }    
+    }
 
 .et_update {
     text-align: center;

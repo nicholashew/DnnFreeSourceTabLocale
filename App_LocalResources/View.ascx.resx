@@ -172,7 +172,7 @@
     <value>Root</value>
   </data>
   <data name="lblhelp.Text" xml:space="preserve">
-    <value>This module gives you the possiblity to translate menu tabs and page titles into DotNetNuke supported languages. Just select the partent tab to translate and go ahead. For your conviniece you can choose a language to compare your translations to. Please be sure to follow the mentioned steps in the included readme file to ensure your translated values appear in the menu. </value>
+    <value>This module gives you the possiblity to translate menu tabs and page titles into DotNetNuke supported languages. Just select the partent tab to translate and go ahead. For your conviniece you can choose a language to compare your translations to. Please be sure to follow the mentioned steps in the included readme file to ensure your translated values appear in the menu. &lt;br/&gt;&lt;br/&gt;Please ensure you have clear the cache to see your updates, this required through a manual action.  </value>
   </data>
   <data name="btnUpdateAll.Text" xml:space="preserve">
     <value>Update All</value>
@@ -185,5 +185,8 @@
   </data>
   <data name="lblTabPageHeadText.Text" xml:space="preserve">
     <value>Page Header Tags</value>
+  </data>
+  <data name="btnClearCache.Text" xml:space="preserve">
+    <value>Clear Cache</value>
   </data>
 </root>

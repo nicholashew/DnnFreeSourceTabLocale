@@ -1,6 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="View.ascx.cs" Inherits="FreeSource.Modules.TabLocale.View" EnableViewState="true" %>
 
-<div id="etcont">
+<div class="et_header">
+    <asp:LinkButton ID="btnClearCache" runat="server" CssClass="et_button" resourcekey="btnClearCache">Clear Cache</asp:LinkButton>
+</div>
+<div id="etcont">    
     <div id="et_help">
         <asp:Label ID="lblhelp" runat="server" resourcekey="lblhelp" />
     </div>
@@ -95,7 +98,7 @@
         </tbody>
     </table>
     <div class="et_update">
-        <asp:LinkButton ID="btnUpdateAll" runat="server" CssClass="et_button" resourcekey="btnUpdateAll" OnClick="btnUpdateAll_Click">Update All</asp:LinkButton>
+        <asp:LinkButton ID="btnUpdateAll" runat="server" CssClass="et_button" resourcekey="btnUpdateAll">Update All</asp:LinkButton>
     </div>
 </div>
 
