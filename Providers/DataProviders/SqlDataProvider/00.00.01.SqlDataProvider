@@ -1,0 +1,37 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE [object_id] = OBJECT_ID(N'{databaseOwner}[{objectQualifier}FreeSource_TabLocale]') AND type in (N'U'))
+	CREATE TABLE {databaseOwner}{objectQualifier}FreeSource_TabLocale
+	(
+		[ID] INT NOT NULL IDENTITY (1, 1),
+		[TabID] INT NOT NULL,
+		[CultureCode] NVARCHAR(8) NOT NULL,
+		[TabName] NVARCHAR(200) NOT NULL,
+		[Title] NVARCHAR(200) NULL,
+		[Description] NVARCHAR(500) NULL,
+		[KeyWords] NVARCHAR(500) NULL,
+		[PageHeadText] NVARCHAR(MAX) NULL,
+		[CreatedOnDate] DATETIME NULL,
+		[CreatedByUserId] INT NULL,
+		[LastModifiedOnDate] DATETIME NULL,
+		[LastModifiedByUserId] INT NULL
+	)
+	GO
+
+	ALTER TABLE {databaseOwner}[{objectQualifier}FreeSource_TabLocale] ADD CONSTRAINT [PK_{objectQualifier}FreeSource_TabLocale] PRIMARY KEY CLUSTERED ([ID])
+	GO
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

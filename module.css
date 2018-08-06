@@ -1,0 +1,137 @@
+#etcont {
+}
+
+#et_help {
+    font-size: 12px;
+    font-family: Arial, Sans-Serif;
+    line-height: 1.5;
+    padding: 10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.et_table {
+    font-size: 12px;
+    font-family: Arial, Sans-Serif;
+    margin: 20px 0 20px 0;
+    -moz-border-radius: 10px;
+    padding: 0 0 20px 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.et_tabs {
+    background: #F6F6F6;
+    border: 1px solid #CCC;
+    border-top: 0;
+    border-bottom: 2px solid #ccc;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-topleft: 10px;
+    padding: 5px;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 1.42857143;
+}
+
+.et_head {
+    display: block;
+    font-weight: bold;
+}
+
+.et_select,
+.et_selectL {
+    background-color: #fff;
+    border: 1px solid #959695;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #46292b;
+    width: 100%;
+    border-radius: 0;
+}
+
+.et_items td {
+    padding: 5px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-bottom-style: dashed;
+}
+
+.et_items.seperator td {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+:-moz-placeholder, :-ms-input-placeholder, ::-moz-placeholder, ::-webkit-input-placeholder {
+    color: #c8c8c8
+}
+
+.et_txtbox,
+.et_txtarea {
+    background-color: #fff;
+    border: 1px solid #959695;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #46292b;
+    width: 100%;
+    border-radius: 0;
+}
+
+    .et_txtbox:focus,
+    .et_txtarea:focus {
+        border: 1px solid #1e88c3;
+        outline: none
+    }
+    
+.item_sep {
+    background: #eee;
+    height: 1px;
+    border: 1px dotted #eee;
+}
+
+.et_desc {
+    color: #666;
+    font-weight: bold;
+}
+
+.et_tabname {
+    font-weight: bold;
+}
+
+.et_comp {
+    color: #666;
+}
+
+.et_button {
+    border: 1px solid #1e88c3;
+    height: 34px;
+    padding: 8px 22px;
+    color: #1e88c3;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit
+}
+    .et_button:hover {
+        color: #21a3da;
+        border-color: #21a3da
+    }
+
+    .et_button:focus {
+        outline: none
+    }
+
+    .et_button:active {
+        color: #226f9b;
+        border-color: #226f9b
+    }    
+
+.et_update {
+    text-align: center;
+}
