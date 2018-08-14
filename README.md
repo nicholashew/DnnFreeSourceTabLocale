@@ -10,6 +10,8 @@ Install and source packages can be downloaded from the releases page on GitHub.
 
 Drag the module to your page and start with experimenting!
 
+![dnnfreessurcetablocale](https://user-images.githubusercontent.com/3435332/44077104-1d5b986c-9fd5-11e8-9aff-5ae8ff240fa6.gif)
+
 ## Prerequisite
 
 - DNN v.09.2.0.366 and above
