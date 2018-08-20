@@ -14,6 +14,7 @@ using System;
 using DotNetNuke.Entities.Users;
 using FreeSource.Modules.TabLocale.Components;
 using DotNetNuke.Services.Exceptions;
+using DotNetNuke.Entities.Modules;
 
 namespace FreeSource.Modules.TabLocale
 {
@@ -29,7 +30,7 @@ namespace FreeSource.Modules.TabLocale
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class Edit : FreeSource_TabLocaleModuleBase
+    public partial class Edit : PortalModuleBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {

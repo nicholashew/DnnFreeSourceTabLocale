@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Breadcrumb.ascx.cs" Inherits="FreeSource.Modules.TabLocale.Breadcrumb" %>
+<asp:Literal ID="litOutput" runat="server" EnableViewState="false" />

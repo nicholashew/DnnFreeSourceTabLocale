@@ -10,105 +10,114 @@
 namespace FreeSource.Modules.TabLocale {
     
     
-    public partial class View {
+    public partial class BreadcrumbSettings {
         
         /// <summary>
-        /// btnClearCache control.
+        /// lblHeaderTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnClearCache;
+        protected global::DotNetNuke.UI.UserControls.LabelControl lblHeaderTemplate;
         
         /// <summary>
-        /// btnBreadCrumbs control.
+        /// txtHeaderTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnBreadCrumbs;
+        protected global::System.Web.UI.WebControls.TextBox txtHeaderTemplate;
         
         /// <summary>
-        /// lblhelp control.
+        /// lblItemTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblhelp;
+        protected global::DotNetNuke.UI.UserControls.LabelControl lblItemTemplate;
         
         /// <summary>
-        /// lblParent control.
+        /// txtItemTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblParent;
+        protected global::System.Web.UI.WebControls.TextBox txtItemTemplate;
         
         /// <summary>
-        /// ddlTabs control.
+        /// lblSeperatorTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTabs;
+        protected global::DotNetNuke.UI.UserControls.LabelControl lblSeperatorTemplate;
         
         /// <summary>
-        /// lblLocale control.
+        /// txtSeperatorTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocale;
+        protected global::System.Web.UI.WebControls.TextBox txtSeperatorTemplate;
         
         /// <summary>
-        /// ddlLocale control.
+        /// lblFooterTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLocale;
+        protected global::DotNetNuke.UI.UserControls.LabelControl lblFooterTemplate;
         
         /// <summary>
-        /// lblLocaleCompare control.
+        /// txtFooterTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocaleCompare;
+        protected global::System.Web.UI.WebControls.TextBox txtFooterTemplate;
         
         /// <summary>
-        /// ddlLocaleCompare control.
+        /// lblEmptyTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLocaleCompare;
+        protected global::DotNetNuke.UI.UserControls.LabelControl lblEmptyTemplate;
         
         /// <summary>
-        /// repTabs control.
+        /// txtEmptyTemplate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repTabs;
+        protected global::System.Web.UI.WebControls.TextBox txtEmptyTemplate;
         
         /// <summary>
-        /// btnUpdateAll control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnUpdateAll;
+        protected global::System.Web.UI.WebControls.LinkButton btnSubmit;
+        
+        /// <summary>
+        /// btnCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnCancel;
     }
 }

@@ -1,21 +1,12 @@
 ﻿<h3>FreeSource_TabLocale</h3>
 <p class="Contributor">
-	FreeSource <br />
-	nicholashew@users.noreply.github.com<br />
-	This extension was created using <a href="http://www.christoc.com">Christoc's</a> Module Development Templates for DNN.
+    FreeSource <br /> nicholashew@users.noreply.github.com
 </p>
 <hr/>
 <div class="License">
-	<h3>About the FreeSource_TabLocale</h3>
-	<p class="Owner">
-		<b>Version 0.0.1</b><br /><br />
-	</p>
-	<p>Description</p>
-	<p>
-	  DNN v.09.02.00 (366)
-	</p>
-	<p>Description</p>
-	<p>
-		This module created due to <a href="https://archive.codeplex.com/?p=ealo" target="_blank">Ealo Localization</a> module that provides a basis for multilingual DotNetNuke based portals is no longer supported for DNN 9.
-	</p>	
+    <h3>About</h3>
+    <p>
+        FreeSource_TabLocale module is a simple pages localization component module for DNN 9.
+        <br/> This extension was created using <a href="http://www.christoc.com" target="_blank">Christoc's</a> Module Development Templates for DNN.
+    </p>
 </div>

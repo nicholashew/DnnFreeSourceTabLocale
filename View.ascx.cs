@@ -10,30 +10,15 @@
 ' 
 */
 
-using System;
-using System.Web.UI.WebControls;
-using FreeSource.Modules.TabLocale.Components;
-using DotNetNuke.Security;
-using DotNetNuke.Services.Exceptions;
-using DotNetNuke.Entities.Modules;
-using DotNetNuke.Entities.Modules.Actions;
-using DotNetNuke.Services.Localization;
-using DotNetNuke.UI.Utilities;
-using DotNetNuke.Entities.Tabs;
-using System.Collections.Generic;
-using DotNetNuke.Security.Permissions;
-using System.Linq;
-using System.Globalization;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Security;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualBasic;
-using System.Collections;
 using DotNetNuke.Common.Utilities;
+using DotNetNuke.Entities.Tabs;
+using DotNetNuke.Services.Exceptions;
+using DotNetNuke.Services.Localization;
+using FreeSource.Modules.TabLocale.Components;
+using System;
+using System.Collections;
+using System.Linq;
+using System.Web.UI.WebControls;
 
 namespace FreeSource.Modules.TabLocale
 {
@@ -50,7 +35,7 @@ namespace FreeSource.Modules.TabLocale
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class View : FreeSource_TabLocaleModuleBase //, IActionable
+    public partial class View : TabLocaleModuleBase //, IActionable
     {
         #region Events
 
@@ -58,6 +43,7 @@ namespace FreeSource.Modules.TabLocale
         {
             base.OnInit(e);
             btnClearCache.Click += btnClearCache_Click;
+            btnBreadCrumbs.Click += btnBreadCrumbs_Click;
             ddlTabs.SelectedIndexChanged += ddlTabs_SelectedIndexChanged;
             ddlLocale.SelectedIndexChanged += ddlLocale_SelectedIndexChanged;
             ddlLocaleCompare.SelectedIndexChanged += ddlLocaleCompare_SelectedIndexChanged;
@@ -105,9 +91,7 @@ namespace FreeSource.Modules.TabLocale
                             tabLocaleController.UpdateTabLocale(tabId, ddlLocale.SelectedValue, txtTabName.Text, txtTabTitle.Text, txtTabDescription.Text, txtTabKeyWords.Text, txtTabPageHeadText.Text, UserId);
 
                             txtTabName.Style.Remove("border-color");
-                            txtTabName.ToolTip = "";
-
-                            //BindTabs(Convert.ToInt32(ddlTabs.SelectedValue));                        
+                            txtTabName.ToolTip = "";                
                         }
                         else
                         {
@@ -125,6 +109,11 @@ namespace FreeSource.Modules.TabLocale
 
         protected void btnClearCache_Click(object sender, EventArgs e) {
             new TabLocaleController().ClearCache();
+        }
+
+        protected void btnBreadCrumbs_Click(object sender, EventArgs e)
+        {            
+            Response.Redirect(EditUrl("BreadcrumbSettings"));
         }
 
         protected void btnUpdateAll_Click(object sender, EventArgs e)

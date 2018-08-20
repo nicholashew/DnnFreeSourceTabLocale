@@ -36,7 +36,7 @@ namespace FreeSource.Modules.TabLocale
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class Settings : FreeSource_TabLocaleModuleSettingsBase
+    public partial class Settings : ModuleSettingsBase
     {
         #region Base Method Implementations
 

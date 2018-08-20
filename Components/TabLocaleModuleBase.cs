@@ -10,11 +10,22 @@
 ' 
 */
 
+using System;
 using DotNetNuke.Entities.Modules;
 
 namespace FreeSource.Modules.TabLocale
 {
-    public class FreeSource_TabLocaleModuleSettingsBase : ModuleSettingsBase
+    public class TabLocaleModuleBase : PortalModuleBase
     {
+        //public int ItemId
+        //{
+        //    get
+        //    {
+        //        var qs = Request.QueryString["tid"];
+        //        if (qs != null)
+        //            return Convert.ToInt32(qs);
+        //        return -1;
+        //    }
+        //}
     }
 }

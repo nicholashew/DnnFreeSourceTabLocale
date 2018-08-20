@@ -2,6 +2,7 @@
 
 <div class="et_header">
     <asp:LinkButton ID="btnClearCache" runat="server" CssClass="et_button" resourcekey="btnClearCache">Clear Cache</asp:LinkButton>
+    <asp:LinkButton ID="btnBreadCrumbs" runat="server" CssClass="et_button" resourcekey="btnBreadCrumbs">Edit BreadCrumbs</asp:LinkButton>
 </div>
 <div id="etcont">    
     <div id="et_help">

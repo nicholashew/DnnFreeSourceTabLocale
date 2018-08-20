@@ -76,9 +76,6 @@ namespace FreeSource.Modules.TabLocale.Components
                 tab.LastModifiedByUserId = modifiedBy;
                 tab.LastModifiedOnDate = DateTime.Now;
                 repository.Update(tab);
-
-                //Remove from the Cache, as it has been modified
-                //DataCache.ClearUserCache(portalId, user.Username);
             }
             else
             {

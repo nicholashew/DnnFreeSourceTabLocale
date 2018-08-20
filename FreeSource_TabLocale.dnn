@@ -1,13 +1,13 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="FreeSource_TabLocale" type="Module" version="00.00.01">
-      <friendlyName>FreeSource_TabLocale</friendlyName>
+    <package name="FreeSource_TabLocale" type="Module" version="00.00.02">
+      <friendlyName>FreeSource TabLocale</friendlyName>
       <description>nicholashew@users.noreply.github.com FreeSource_TabLocale module</description>
       <iconFile>~/Images/icon_extensions_32px.png</iconFile>
       <owner>
         <name>nicholashew@users.noreply.github.com</name>
         <organization>nicholashew@users.noreply.github.com</organization>
-        <url>nicholashew@users.noreply.github.com</url>
+        <url>https://github.com/nicholashew/DnnFreeSourceTabLocale</url>
         <email>nicholashew@users.noreply.github.com</email>
       </owner>
       <license src="License.txt"></license>
@@ -41,8 +41,8 @@
               <name>Resources.zip</name>
             </resourceFile>
           </resourceFiles>
-        </component>
-
+        </component>    
+        
         <component type="Module">
           <desktopModule>
             <moduleName>FreeSource_TabLocale</moduleName>
@@ -89,6 +89,26 @@
                     <helpUrl />
                     <viewOrder>0</viewOrder>
                   </moduleControl>
+                  <moduleControl>
+                    <controlKey>BreadcrumbSettings</controlKey>
+                    <controlSrc>DesktopModules/FreeSource_TabLocale/BreadcrumbSettings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Breadcrumb Settings</controlTitle>
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>FreeSourceTabLocaleBreadcrumb</controlKey>
+                    <controlSrc>DesktopModules/FreeSource_TabLocale/Breadcrumb.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>FreeSourceTabLocaleBreadcrumb</controlTitle>
+                    <controlType>SkinObject</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <supportsPopUps>False</supportsPopUps>
+                  </moduleControl>
                 </moduleControls>
               </moduleDefinition>
             </moduleDefinitions>
@@ -102,7 +122,7 @@
               <upgradeVersionsList>00.00.01</upgradeVersionsList>
             </attributes>
           </eventMessage>
-        </component>
+        </component>        
         <component type="Assembly">
           <assemblies>
             <assembly>
