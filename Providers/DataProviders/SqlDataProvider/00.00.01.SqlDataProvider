@@ -11,6 +11,7 @@
 /** Create Table **/
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE [object_id] = OBJECT_ID(N'{databaseOwner}[{objectQualifier}FreeSource_TabLocale]') AND type in (N'U'))
+BEGIN
 	CREATE TABLE {databaseOwner}{objectQualifier}FreeSource_TabLocale
 	(
 		[ID] INT NOT NULL IDENTITY (1, 1),
@@ -26,10 +27,9 @@ IF NOT EXISTS (SELECT * FROM sys.objects WHERE [object_id] = OBJECT_ID(N'{databa
 		[LastModifiedOnDate] DATETIME NULL,
 		[LastModifiedByUserId] INT NULL
 	)
-	GO
 
 	ALTER TABLE {databaseOwner}[{objectQualifier}FreeSource_TabLocale] ADD CONSTRAINT [PK_{objectQualifier}FreeSource_TabLocale] PRIMARY KEY CLUSTERED ([ID])
-	GO
+END
 GO
 
 /************************************************************/
