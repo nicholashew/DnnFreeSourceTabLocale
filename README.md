@@ -12,6 +12,12 @@ Drag the module to your page and start with experimenting!
 
 ![dnnfreessurcetablocale](https://user-images.githubusercontent.com/3435332/44077104-1d5b986c-9fd5-11e8-9aff-5ae8ff240fa6.gif)
 
+## Features
+
+- [Listview Mode (Default)](https://user-images.githubusercontent.com/3435332/44395951-072a5300-a56e-11e8-90f3-3ff48cc272a2.GIF)
+- [Treeview Mode](https://user-images.githubusercontent.com/3435332/44395723-5b810300-a56d-11e8-8404-eebdfb6dc34b.GIF)
+- [Configure Breadcrumbs Layout](https://user-images.githubusercontent.com/3435332/44395952-072a5300-a56e-11e8-9aba-5194132b3683.GIF)
+
 ## Prerequisite
 
 - DNN v.09.2.0.366 and above
