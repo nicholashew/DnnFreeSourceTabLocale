@@ -92,6 +92,13 @@
     <Compile Include="Components\TabLocaleModuleBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="controls\EditLocaleTab.ascx.cs">
+      <DependentUpon>EditLocaleTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\EditLocaleTab.ascx.designer.cs">
+      <DependentUpon>EditLocaleTab.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Edit.ascx.cs">
       <DependentUpon>Edit.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,16 +121,26 @@
     <Compile Include="View.ascx.designer.cs">
       <DependentUpon>View.ascx</DependentUpon>
     </Compile>
+    <Compile Include="ViewTree.ascx.cs">
+      <DependentUpon>ViewTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTree.ascx.designer.cs">
+      <DependentUpon>ViewTree.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Breadcrumb.ascx" />
+    <Content Include="controls\EditLocaleTab.ascx" />
     <Content Include="Edit.ascx" />
     <Content Include="BreadcrumbSettings.ascx" />
+    <Content Include="images\loading.gif" />
     <Content Include="License.txt" />
     <Content Include="module.css" />
     <Content Include="ReleaseNotes.txt" />
     <Content Include="Settings.ascx" />
     <Content Include="View.ascx" />
+    <Content Include="ViewTree.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FreeSource_TabLocale.dnn">
@@ -153,6 +170,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_LocalResources\BreadcrumbSettings.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\ViewTree.ascx.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

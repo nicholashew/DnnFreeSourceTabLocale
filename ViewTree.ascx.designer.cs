@@ -10,7 +10,7 @@
 namespace FreeSource.Modules.TabLocale {
     
     
-    public partial class View {
+    public partial class ViewTree {
         
         /// <summary>
         /// btnClearCache control.
@@ -22,102 +22,75 @@ namespace FreeSource.Modules.TabLocale {
         protected global::System.Web.UI.WebControls.LinkButton btnClearCache;
         
         /// <summary>
-        /// btnViewTree control.
+        /// btnListView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnViewTree;
+        protected global::System.Web.UI.WebControls.LinkButton btnListView;
         
         /// <summary>
-        /// btnBreadCrumbs control.
+        /// updateProgress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnBreadCrumbs;
+        protected global::System.Web.UI.UpdateProgress updateProgress;
         
         /// <summary>
-        /// lblhelp control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblhelp;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// lblParent control.
+        /// tvPages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblParent;
+        protected global::System.Web.UI.WebControls.TreeView tvPages;
         
         /// <summary>
-        /// ddlTabs control.
+        /// lbtnToggleCompare control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTabs;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnToggleCompare;
         
         /// <summary>
-        /// lblLocale control.
+        /// ucEditLocaleTab control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocale;
+        protected global::FreeSource.Modules.TabLocale.controls.EditLocaleTab ucEditLocaleTab;
         
         /// <summary>
-        /// ddlLocale control.
+        /// pnlCompare control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLocale;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pnlCompare;
         
         /// <summary>
-        /// lblLocaleCompare control.
+        /// ucEditLocaleTabCompare control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocaleCompare;
-        
-        /// <summary>
-        /// ddlLocaleCompare control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLocaleCompare;
-        
-        /// <summary>
-        /// repTabs control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repTabs;
-        
-        /// <summary>
-        /// btnUpdateAll control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnUpdateAll;
+        protected global::FreeSource.Modules.TabLocale.controls.EditLocaleTab ucEditLocaleTabCompare;
     }
 }

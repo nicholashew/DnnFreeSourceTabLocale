@@ -69,6 +69,16 @@
                     <viewOrder>0</viewOrder>
                   </moduleControl>
                   <moduleControl>
+                    <controlKey>ViewTree</controlKey>
+                    <controlSrc>DesktopModules/FreeSource_TabLocale/ViewTree.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
                     <controlKey>Edit</controlKey>
                     <controlSrc>DesktopModules/FreeSource_TabLocale/Edit.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>

@@ -43,6 +43,7 @@ namespace FreeSource.Modules.TabLocale
         {
             base.OnInit(e);
             btnClearCache.Click += btnClearCache_Click;
+            btnViewTree.Click += btnViewTree_Click;
             btnBreadCrumbs.Click += btnBreadCrumbs_Click;
             ddlTabs.SelectedIndexChanged += ddlTabs_SelectedIndexChanged;
             ddlLocale.SelectedIndexChanged += ddlLocale_SelectedIndexChanged;
@@ -109,6 +110,11 @@ namespace FreeSource.Modules.TabLocale
 
         protected void btnClearCache_Click(object sender, EventArgs e) {
             new TabLocaleController().ClearCache();
+        }
+
+        protected void btnViewTree_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(EditUrl("ViewTree"));
         }
 
         protected void btnBreadCrumbs_Click(object sender, EventArgs e)

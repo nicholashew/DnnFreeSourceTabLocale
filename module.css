@@ -144,3 +144,48 @@
 .et_update {
     text-align: center;
 }
+
+.et_tree {
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    display: block;
+    box-sizing: border-box;
+    min-height: 1px;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0px 10px 20px;
+    margin-bottom: 20px;
+}
+
+.et_tree_sidebar {
+    transition: all .5s;
+    opacity: 1;
+    cursor: auto;
+    width: 20%;
+    overflow-x: auto;
+    padding: 15px 18px 0 6px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.et_tree_details {
+    width: 78%;
+    padding: 10px;
+    margin-top: 20px;
+    float: left;
+    border: 1px solid #c8c8c8;
+}
+
+    .et_tree_details.compare-mode .tab-info {
+        width: 50%;
+        float: left;
+    }
+
+    .et_tree_details .head_row {
+        width: 100%;
+        text-align: right;
+        padding: 10px 0 15px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+    }
